@@ -1,0 +1,286 @@
+<TaskerData sr="" dvi="1" tv="5.8.5">
+	<Profile sr="prof137" ve="2">
+		<cdate>1567817340118</cdate>
+		<edate>1572100842097</edate>
+		<id>137</id>
+		<mid0>136</mid0>
+		<nme>Manutenção WhatsApp</nme>
+		<Time sr="con0">
+			<fh>2</fh>
+			<fm>30</fm>
+			<th>2</th>
+			<tm>30</tm>
+		</Time>
+		<Day sr="con1">
+			<wday0>1</wday0>
+		</Day>
+	</Profile>
+	<Task sr="task136">
+		<cdate>1485137385519</cdate>
+		<edate>1571858921311</edate>
+		<id>136</id>
+		<nme>Manutenção pastas WhatsApp TESTE</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>342</code>
+			<label>Tarefa atualizada, para permitir o correto descarte de WhatsApp/Media/WhatsApp Voice Notes após o backup.</label>
+			<se>false</se>
+			<Int sr="arg0" val="4"/>
+			<Str sr="arg1" ve="3">Download/Voice Notes</Str>
+			<Str sr="arg2" ve="3">%tem_pasta</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>409</code>
+			<Str sr="arg0" ve="3">Download/Voice Notes</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%tem_pasta</lhs>
+					<op>1</op>
+					<rhs>dir</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>420</code>
+			<label>Compacta pasta WhatsApp Voice Notes e salva em Download\Voice Notes</label>
+			<Str sr="arg0" ve="3">WhatsApp/Media/WhatsApp Voice Notes</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="8"/>
+			<Str sr="arg3" ve="3">%nome_backup</Str>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>408</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">WhatsApp/Media/WhatsApp Voice Notes</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>409</code>
+			<Str sr="arg0" ve="3">WhatsApp/Media/WhatsApp Voice Notes</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>547</code>
+			<label>Relação das pastas para manutenção</label>
+			<Str sr="arg0" ve="3">%Pasta_Zap</Str>
+			<Str sr="arg1" ve="3">WhatsApp/Media/WhatsApp Animated Gifs,WhatsApp/Media/WhatsApp Images,WhatsApp/Media/WhatsApp Audio,WhatsApp/Media/WhatsApp Voice Notes,WhatsApp/Media/WhatsApp Video,WhatsApp/Media/WhatsApp Profile Photos,WhatsApp/Media/WallPaper,WhatsApp/Media/WhatsApp Documents,WhatsApp/Media/WhatsApp Animated Gifs/Sent,WhatsApp/Media/WhatsApp Images/Sent,WhatsApp/Media/WhatsApp Audio/Sent,WhatsApp/Media/WhatsApp Voice Notes/Sent,WhatsApp/Media/WhatsApp Video/Sent,WhatsApp/Media/WhatsApp Profile Photos,WhatsApp/Media/WallPaper,WhatsApp/Media/WhatsApp Documents/Sent</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>354</code>
+			<Str sr="arg0" ve="3">%Pastas</Str>
+			<Str sr="arg1" ve="3">%Pasta_Zap</Str>
+			<Str sr="arg2" ve="3">,</Str>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>547</code>
+			<label>Reduzindo a data para dois dias antes</label>
+			<Str sr="arg0" ve="3">%tempo_antes</Str>
+			<Str sr="arg1" ve="3">%DATE</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>596</code>
+			<Str sr="arg0" ve="3">%tempo_antes</Str>
+			<Int sr="arg1" val="3"/>
+			<Str sr="arg2" ve="3"/>
+		</Action>
+		<Action sr="act17" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%tempo_antes</Str>
+			<Str sr="arg1" ve="3">%tempo_antes - 43200</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act18" ve="7">
+			<code>596</code>
+			<Str sr="arg0" ve="3">%tempo_antes</Str>
+			<Int sr="arg1" val="4"/>
+			<Str sr="arg2" ve="3"/>
+		</Action>
+		<Action sr="act19" ve="7">
+			<code>597</code>
+			<label>Reduzindo a variável para oito dígitos</label>
+			<Str sr="arg0" ve="3">%tempo_antes</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="8"/>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>354</code>
+			<label>Ela irá fazer um backup de todas as notas de voz do WhatsApp. Depois excluirá WhatsApp/Media/WhatsApp Voice Notes, e recriará o diretório vazio.
+
+Também apagará todos os arquivos da pasta /WhatsApp/Shared.
+
+Posteriormente, apagará os arquivos das sub-pastas /WhatsApp, inclusive enviados (/Sent), desde que sejam de dois dias antes.
+
+By Osdilson Amorim Oliveira.</label>
+			<Str sr="arg0" ve="3">%Files</Str>
+			<Str sr="arg1" ve="3">1,2</Str>
+			<Str sr="arg2" ve="3">,</Str>
+		</Action>
+		<Action sr="act20" ve="7">
+			<code>354</code>
+			<Str sr="arg0" ve="3">%Files_Del</Str>
+			<Str sr="arg1" ve="3">1,2</Str>
+			<Str sr="arg2" ve="3">,</Str>
+		</Action>
+		<Action sr="act21" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%Pastas</Str>
+			<Str sr="arg1" ve="3">%Pastas()</Str>
+		</Action>
+		<Action sr="act22" ve="7">
+			<code>412</code>
+			<label>Selecionar arquivos da pasta respectiva para exclusão</label>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%Pastas</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">%Files_Del</Str>
+		</Action>
+		<Action sr="act23" ve="7">
+			<code>547</code>
+			<label>Total de arquivos da pasta respectiva</label>
+			<Str sr="arg0" ve="3">%tmp_files</Str>
+			<Str sr="arg1" ve="3">%Files_Del(#)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act24" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%Files_Del</Str>
+			<Str sr="arg1" ve="3">%Files_Del()</Str>
+		</Action>
+		<Action sr="act25" ve="7">
+			<code>342</code>
+			<label>Descobre a data do arquivo</label>
+			<se>false</se>
+			<Int sr="arg0" val="1"/>
+			<Str sr="arg1" ve="3">%Files_Del</Str>
+			<Str sr="arg2" ve="3">%ddd_file</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act26" ve="7">
+			<code>596</code>
+			<label>Converte a variável</label>
+			<Str sr="arg0" ve="3">%ddd_file</Str>
+			<Int sr="arg1" val="4"/>
+			<Str sr="arg2" ve="3"/>
+		</Action>
+		<Action sr="act27" ve="7">
+			<code>597</code>
+			<label>Reduzindo a variável para oito dígitos</label>
+			<Str sr="arg0" ve="3">%ddd_file</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="8"/>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act28" ve="7">
+			<code>342</code>
+			<Int sr="arg0" val="4"/>
+			<Str sr="arg1" ve="3">%Files_Del</Str>
+			<Str sr="arg2" ve="3">%arquivo</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act29" ve="7">
+			<code>406</code>
+			<label>Exclui arquivo com data anterior</label>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%Files_Del</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%ddd_file</lhs>
+					<op>6</op>
+					<rhs>%tempo_antes</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%Files_Del</lhs>
+					<op>1</op>
+					<rhs>dir</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>412</code>
+			<label>Selecionar arquivos da pasta Shared para exclusão</label>
+			<Str sr="arg0" ve="3">WhatsApp/.Shared</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">%Files</Str>
+		</Action>
+		<Action sr="act30" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act31" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<label>Total de arquivos da pasta Shared</label>
+			<Str sr="arg0" ve="3">%tmp_files</Str>
+			<Str sr="arg1" ve="3">%Files(#)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%Files</Str>
+			<Str sr="arg1" ve="3">%Files()</Str>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>406</code>
+			<label>Exclui arquivos da pasta Shared</label>
+			<Str sr="arg0" ve="3">%Files</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%nome_backup</Str>
+			<Str sr="arg1" ve="3">Download/Voice Notes/%DATE Voice Notes.zip</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Pasta_Zap</Str>
+			<Str sr="arg1" ve="3">WhatsApp/Media/WhatsApp Animated Gifs,WhatsApp/Media/WhatsApp Images,WhatsApp/Media/WhatsApp Audio,WhatsApp/Media/WhatsApp Video,WhatsApp/Media/WhatsApp Profile Photos,WhatsApp/Media/WallPaper,WhatsApp/Media/WhatsApp Documents,WhatsApp/Media/WhatsApp Animated Gifs/Sent,WhatsApp/Media/WhatsApp Images/Sent,WhatsApp/Media/WhatsApp Audio/Sent,WhatsApp/Media/WhatsApp Video/Sent,WhatsApp/Media/WhatsApp Profile Photos,WhatsApp/Media/WallPaper,WhatsApp/Media/WhatsApp Documents/Sent</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+	</Task>
+</TaskerData>
